@@ -1,6 +1,6 @@
 [user]
-  name = Juan Ignacio Donoso
-  email = jidonoso@gmail.com
+  name = Camilo Flores
+  email = camilo.ignacio@gmail.com
 
 [credential]
   helper = osxkeychain
@@ -59,4 +59,4 @@
   modified = red
 
 [github]
-  user = blackjid
+  user = llekn
