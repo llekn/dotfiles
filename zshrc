@@ -30,10 +30,9 @@ antigen apply
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 
-# Key bindings
-bindkey -e
-bindkey '^[[1;9C' forward-word
-bindkey '^[[1;9D' backward-word
+# Skip forward/back a word with opt-arrow
+bindkey '^[^[[C' forward-word
+bindkey '^[^[[D' backward-word
 
 # makes color constants available
 autoload -U colors
@@ -55,7 +54,6 @@ setopt no_nomatch
 # Init rbenv and nodenv
 eval "$(rbenv init -)"
 eval "$(nodenv init -)"
-eval "$(goenv init -)"
 
 # mkdir .git/safe in the root of repositories you trust
 export PATH=".git/safe/../../bin:$PATH"
