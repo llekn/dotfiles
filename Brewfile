@@ -51,9 +51,8 @@ brew 'zsh'
 
 # brew 'elasticsearch'
 # brew 'elasticsearch@2.4'
-# brew 'mysql'
-# brew 'mysql@5.6'
-# brew 'postgresql'
+brew 'mysql'
+brew 'postgresql'
 # brew 'postgis'
 # brew 'redis'
 
