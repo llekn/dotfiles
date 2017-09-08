@@ -1,5 +1,6 @@
 tap 'caskroom/cask'
 tap 'caskroom/fonts'
+tap 'caskroom/versions'
 tap 'homebrew/core'
 tap 'homebrew/services'
 tap 'homebrew/versions'
@@ -51,8 +52,9 @@ brew 'zsh-history-substring-search'
 brew 'zsh-syntax-highlighting'
 brew 'zsh'
 
-brew 'elasticsearch'
-# brew 'elasticsearch@2.4'
+# Services needed for development
+# brew 'elasticsearch'
+brew 'elasticsearch@2.4'
 brew 'mysql'
 brew 'postgresql'
 # brew 'postgis'
@@ -98,6 +100,9 @@ cask 'qlstephen'
 cask 'quicklook-csv'
 cask 'quicklook-json'
 cask 'quicklookapk'
+
+cask 'font-inconsolata'
+cask 'font-ubuntu'
 
 # mas "Noizio", id: 928871589
 # mas "Simplenote", id: 692867256
