@@ -70,7 +70,7 @@ set list listchars=tab:»·,trail:·,nbsp:·
 syntax on
 set background=dark
 let g:solarized_termtrans = 1
-colorscheme solarized
+colorscheme default
 
 " Make it obvious where 80 characters is
 set textwidth=80
