@@ -103,6 +103,7 @@ cask 'quicklookapk'
 
 cask 'font-inconsolata'
 cask 'font-ubuntu'
+cask 'font-roboto'
 
 # mas "Noizio", id: 928871589
 # mas "Simplenote", id: 692867256
