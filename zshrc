@@ -31,8 +31,9 @@ bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 
 # Skip forward/back a word with opt-arrow
-bindkey '^[^[[C' forward-word
-bindkey '^[^[[D' backward-word
+# Do not bind here!
+# https://stackoverflow.com/questions/12382499/looking-for-altleftarrowkey-solution-in-zsh
+
 
 # makes color constants available
 autoload -U colors
@@ -61,3 +62,6 @@ export PATH=".git/safe/../../node_modules/.bin:$PATH"
 
 # aliases
 [[ -f ~/.aliases ]] && source ~/.aliases
+
+# zsh-completions
+fpath=(/usr/local/share/zsh-completions $fpath)
