@@ -1,4 +1,3 @@
 bundler
 potassium
-rails
-rubocop
+rubocop -v 0.49.1
