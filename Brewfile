@@ -86,10 +86,8 @@ cask 'spotify'
 cask 'sublime-text'
 cask 'teamspeak-client'
 # cask 'telegram'
-# cask 'toggldesktop'
 cask 'tunnelblick'
 cask 'typora'
-# cask 'visual-studio-code'
 
 # Quicklook plugins
 cask 'betterzipql'
