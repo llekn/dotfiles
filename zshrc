@@ -12,6 +12,7 @@ antigen bundles <<EOBUNDLES
   osx
   fasd
   thefuck
+  history-substring-search
 
   mafredri/zsh-async
   zsh-users/zsh-completions
@@ -52,9 +53,10 @@ SAVEHIST=100000
 setopt extendedglob
 setopt no_nomatch
 
-# Init rbenv and nodenv
+# Init rbenv, nodenv and pyenv
 eval "$(rbenv init -)"
 eval "$(nodenv init -)"
+eval "$(pyenv init -)"
 
 # mkdir .git/safe in the root of repositories you trust
 export PATH=".git/safe/../../bin:$PATH"
@@ -65,3 +67,7 @@ export PATH=".git/safe/../../node_modules/.bin:$PATH"
 
 # zsh-completions
 fpath=(/usr/local/share/zsh-completions $fpath)
+export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
+
+# pyenv
+export PATH="~/.pyenv/bin:$PATH"
