@@ -1,40 +1,11 @@
 # enable antigen
-source /usr/local/share/antigen/antigen.zsh
-
-# Load oh-my-zsh
-antigen use oh-my-zsh
-
-# Bundles
-antigen bundles <<EOBUNDLES
-  git
-  gem
-  heroku
-  osx
-  fasd
-  thefuck
-  history-substring-search
-
-  mafredri/zsh-async
-  zsh-users/zsh-completions
-  zsh-users/zsh-autosuggestions
-  sindresorhus/pure
-
-  # these should be at last!
-  zsh-users/zsh-syntax-highlighting
-  zsh-users/zsh-history-substring-search
-EOBUNDLES
-
-# Apply antigen
-antigen apply
+DISABLE_AUTO_UPDATE=true
+ZSH="$(antibody home)/https-COLON--SLASH--SLASH-github.com-SLASH-robbyrussell-SLASH-oh-my-zsh"
+source ~/.dotfiles/zsh_plugins.sh
 
 # bind UP and DOWN arrow keys
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
-
-# Skip forward/back a word with opt-arrow
-# Do not bind here!
-# https://stackoverflow.com/questions/12382499/looking-for-altleftarrowkey-solution-in-zsh
-
 
 # makes color constants available
 autoload -U colors
@@ -67,7 +38,12 @@ export PATH=".git/safe/../../node_modules/.bin:$PATH"
 
 # zsh-completions
 fpath=(/usr/local/share/zsh-completions $fpath)
+
+# MySQL
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 
 # pyenv
 export PATH="~/.pyenv/bin:$PATH"
+
+# heroku autocomplete setup
+HEROKU_AC_ZSH_SETUP_PATH=/Users/camilo/Library/Caches/heroku/autocomplete/zsh_setup && test -f $HEROKU_AC_ZSH_SETUP_PATH && source $HEROKU_AC_ZSH_SETUP_PATH;

@@ -16,7 +16,7 @@ brew 'pkg-config'
 brew 'readline'
 
 brew 'ack'
-brew 'antigen'
+brew 'antibody'
 # brew 'awscli'
 brew 'certbot'
 brew 'diff-so-fancy'
